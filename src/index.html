@@ -5,37 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <title>Alpaca generator</title>
 </head>
 <body>
     <header><h1>ALPACA GENERATOR</h1></header>
     <section class="generator">
         <section class="parts-selection">
-            <button class="styling-btn"> Hair</button>
-            <button class="styling-btn"> Ears</button>
-            <button class="styling-btn"> Eyes</button>
-            <button class="styling-btn"> Mouth</button>
-            <button class="styling-btn"> Neck</button>
-            <button class="styling-btn"> Leg</button>
-            <button class="styling-btn"> Accessories</button>
-            <button class="styling-btn"> Background</button>
+            <button class="styling-btn" onclick=choicePart(this)>Hair</button>
+            <button class="styling-btn" onclick=choicePart(this)>Ears</button>
+            <button class="styling-btn" onclick=choicePart(this)>Eyes</button>
+            <button class="styling-btn" onclick=choicePart(this)>Mouth</button>
+            <button class="styling-btn" onclick=choicePart(this)>Neck</button>
+            <button class="styling-btn" onclick=choicePart(this)>Leg</button>
+            <button class="styling-btn" onclick=choicePart(this)>Accessories</button>
+            <button class="styling-btn" onclick=choicePart(this)>Backgrounds</button>
         </section>
-        <section class="image"></section>
+        <canvas id="image" width="960" height="960"></canvas>
         <section class="functionalities">
-            <button> <i class="material-icons">shuffle</i> Random </button>
-            <button> <i class="material-icons">download</i> Download </button>
+            <button onclick="random()"> <i class="material-icons">shuffle</i> Random </button>
+            <button onclick="download()"> <i class="material-icons">download</i> Download </button>
         </section>
-        <section class="types-selection">
-            <button class="styling-btn"> Hair</button>
-            <button class="styling-btn"> Ears</button>
-            <button class="styling-btn"> Eyes</button>
-            <button class="styling-btn"> Mouth</button>
-            <button class="styling-btn"> Neck</button>
-            <button class="styling-btn"> Leg</button>
-            <button class="styling-btn"> Accessories</button>
-            <button class="styling-btn"> Background</button>
+        <section class="style-selection">
+            <button class="styling-btn" onclick=styleAlpaca(this)>Bang</button>
+            <button class="styling-btn" onclick=styleAlpaca(this)>Curls</button>
+            <button class="styling-btn" onclick=styleAlpaca(this)>Default</button>
+            <button class="styling-btn" onclick=styleAlpaca(this)>Elegant</button>
+            <button class="styling-btn" onclick=styleAlpaca(this)>Fancy</button>
+            <button class="styling-btn" onclick=styleAlpaca(this)>Quiff</button>
+            <button class="styling-btn" onclick=styleAlpaca(this)>Short</button>
         </section>
     </section>
     
+    <script src="index.js"></script>
 </body>
 </html>
