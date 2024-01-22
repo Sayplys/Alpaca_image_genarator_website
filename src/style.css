@@ -107,4 +107,50 @@ header h1{
 }
 
 
+@media (max-width: 1400px) {
+    body{
+        padding-inline: 8%;
+    }
+}
 
+@media (max-width: 1050px){
+    header h1{
+        font-size: 3rem;
+    }
+
+    .generator{
+        display: flex;
+        flex-direction: column;
+    }
+
+    canvas{
+        width: 80%;
+    }
+
+    .functionalities{
+        flex-direction: row;
+    }
+
+    .functionalities button{
+        width: 50%;
+        margin: 3px;
+    }
+
+    .parts-selection{
+        order: 1;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: start;
+    }
+
+    .style-selection{
+        justify-content: start;
+    }
+
+    .styling-btn{
+        min-width: 6rem;
+        margin: 1%;
+        font-size: 13px;
+    }
+
+}
