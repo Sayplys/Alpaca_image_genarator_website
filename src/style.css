@@ -5,7 +5,7 @@
 }
 
 body{
-    padding-inline: 5%;
+    padding-inline: 20%;
     height: 100vh;
     background-color: #eee;
 }
@@ -31,7 +31,7 @@ header h1{
 .parts-selection{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     grid-row: 1 / 3;
     height: 100%;
 }
@@ -55,7 +55,9 @@ header h1{
     align-items: center;
     padding-inline: 15%;
     height: 3rem;
-    border: 0px;
+    border-image: linear-gradient(to right, #c77, #77c);
+    border-image-slice: 1;
+    border-width: 3px;
     font-weight: bold;
     font-size: large;
     background-color: #fff;
@@ -75,12 +77,19 @@ header h1{
 .styling-btn{
     height: 3rem;
     border-radius: 1.7rem;
-    border: 2px solid #99f;
+    border: 2.5px solid #99f;
     background-color: transparent;
+    font-size: large;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .styling-btn:hover{
     background-color: #99b;
+}
+
+.styling-btn:focus{
+    background-color: #77c;
 }
 
 .style-selection .styling-btn{
@@ -88,3 +97,14 @@ header h1{
     margin: 2%;
     border-color: #944;
 }
+
+.style-selection .styling-btn:hover{
+    background-color: #b99;
+}
+
+.style-selection .styling-btn:focus{
+    background-color: #c77;
+}
+
+
+
