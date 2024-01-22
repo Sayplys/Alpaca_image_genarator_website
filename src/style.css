@@ -2,12 +2,12 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background-color: #eee;
 }
 
 body{
     padding-inline: 10%;
     height: 100vh;
+    background-color: #eee;
 }
 
 header h1{
@@ -19,7 +19,7 @@ header h1{
 
 .generator{
     display: grid;
-    grid-template-columns: 20% 45% 18%;
+    grid-template-columns: 24% 50% 20%;
     grid-template-rows: 65% 25%;
     column-gap: 3%;
     row-gap: 7%;
@@ -28,9 +28,11 @@ header h1{
 }
 
 .parts-selection{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     grid-row: 1 / 3;
     height: 100%;
-    background-color: rgba(30, 90, 67, 0.212);
 }
 
 .image{
@@ -41,10 +43,47 @@ header h1{
 }
 
 .functionalities{
-    background-color: rgba(30, 90, 67, 0.212);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.functionalities button{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-inline: 15%;
+    height: 3rem;
+    border: 0px;
+    font-weight: bold;
+    font-size: large;
+    background-color: #fff;
+}
+
+.functionalities button:hover{
+    background-color: #a9a;
 }
 
 .types-selection{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     grid-column: 2 / 4;
-    background-color: rgba(30, 90, 67, 0.212);
+}
+
+.styling-btn{
+    height: 3rem;
+    border-radius: 1.7rem;
+    border: 2px solid #99f;
+    background-color: transparent;
+}
+
+.styling-btn:hover{
+    background-color: #99b;
+}
+
+.types-selection .styling-btn{
+    width: 20%;
+    margin: 2%;
+    border-color: #944;
 }
