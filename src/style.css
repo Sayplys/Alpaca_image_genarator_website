@@ -37,8 +37,8 @@ header h1{
 }
 
 #image{
-    height: 100%;
     aspect-ratio: 1;
+    width:20rem;
     margin: auto;
     border: 1px solid;
 }
@@ -107,13 +107,13 @@ header h1{
 }
 
 
-@media (max-width: 1400px) {
+@media (max-width: 1000px) {
     body{
         padding-inline: 8%;
     }
 }
 
-@media (max-width: 1050px){
+@media (max-width: 800px){
     header h1{
         font-size: 3rem;
     }
@@ -152,5 +152,19 @@ header h1{
         margin: 1%;
         font-size: 13px;
     }
+}
 
+@media (max-width: 450px){
+    header h1{
+        font-size: 2rem;
+    }
+    #image{
+        width: 90%;
+    }
+    .functionalities button{
+        font-size: .8rem;
+    }
+    .styling-btn{
+        font-size: .65rem;
+    }
 }
