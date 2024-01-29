@@ -100,7 +100,7 @@ function draw(){
     for(var i = 0; i < currentStyle.length; i++){
         var key = Object.keys(currentStyle[i])[0]
 
-        var imgPromise = loadImages(`../alpaca/${key}/${currentStyle[i][key]}.png`)
+        var imgPromise = loadImages(`./alpaca/${key}/${currentStyle[i][key]}.png`)
         promises.push(imgPromise)
     }
 
